@@ -1,0 +1,59 @@
+body{
+    background-color: aliceblue;
+}
+#Heading{
+    text-align: center;
+}
+#container{
+    width: 70%;
+    margin: auto;
+
+    display: grid;
+    gap: 5%;
+    grid-template-columns: auto auto auto;   
+}
+
+#container>div{
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+}
+
+.result>div>img{
+    margin: 3%;
+    height: 150px;
+    width: 150px;
+}
+.result>div>div>button{
+    border: 0;
+    padding: 5%;
+    width: 50%;
+    margin: 5%;
+    background-color: rgb(173, 233, 233);
+}
+
+#container>div:hover{
+    background-color: rgb(234, 234, 234);
+    box-shadow: 5px 5px 5px rgb(202, 189, 189);
+}
+
+@media only screen and (max-width: 600px) {
+    #container{
+        width: 90%;
+        margin: auto;
+    
+        display: grid;
+        gap: 5%;
+        grid-template-columns: auto auto;   
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #container{
+        width: 90%;
+        margin: auto;
+    
+        display: grid;
+        gap: 5%;
+        grid-template-columns: auto;   
+    }
+}
